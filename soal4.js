@@ -26,9 +26,10 @@ const dataPenjualanPakAldi = [
 ];
 
 const hitungTotalPenjualan = (dataPenjualan) => {
-  return (dataPenjualan = dataPenjualan.reduce((total, product) => {
+  //Menggunakan method reduce untuk menggabungkan seluruh elemt array dari data penjualan
+  return dataPenjualan.reduce((total, product) => {
     return total + product.totalPenjualan;
-  }, 0));
+  }, 0); //nilai awal dari 0
 };
 
 console.log(hitungTotalPenjualan(dataPenjualanPakAldi));

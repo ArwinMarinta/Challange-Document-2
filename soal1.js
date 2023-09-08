@@ -1,4 +1,5 @@
 function changeWord(selectedText, changeText, text) {
+  //Memgunakan method replace dari sebuah text untuk mencari dan mengganti text
   const newText = text.replace(selectedText, changeText);
   return newText;
 }

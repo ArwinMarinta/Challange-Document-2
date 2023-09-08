@@ -68,6 +68,7 @@ const getInfoPenjualan = (dataPenjualan) => {
   // });
 
   //format ke rupiah
+  //Menggunakan method Intl.NumberFormat dalam mengkoversi mata uang yang akan di format format ke dalam string
   const rupiahFormat = new Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
